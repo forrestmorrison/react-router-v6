@@ -6,26 +6,23 @@ import './App.css';
 
 function App() {
   return (
-  <>
-    <Routes location="/books">
-      <Route path="/books" element={<h1>Extra Content</h1>} />
-    </Routes>
-    <nav>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/books">Books</Link>
-        </li>
-      </ul>
-    </nav>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/books/*" element={<BookRoutes />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  </>
+    <>
+      <nav>
+        <ul>
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/books">Books</Link>
+          </li>
+        </ul>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/books/*" element={<BookRoutes />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </>
   )
 }
 
