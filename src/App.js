@@ -1,8 +1,8 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import { Home } from "./pages/Home";
 import { BookRoutes } from './BookRoutes';
 import { NotFound } from "./pages/NotFound";
-import './App.css';
+import './styles.css';
 
 function App() {
   return (
@@ -10,10 +10,10 @@ function App() {
       <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/books">Books</Link>
+            <NavLink end to="/books">Books</NavLink>
           </li>
         </ul>
       </nav>
