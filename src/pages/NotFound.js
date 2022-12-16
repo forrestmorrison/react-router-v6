@@ -5,8 +5,8 @@ export function NotFound() {
     const navigate = useNavigate()
     useEffect(() => {
         setTimeout(() => {
-            navigate(-1)
+            navigate("/", { state: "Error Not Page"})
         }, 1000)
-    }, [])
+    })
     return <h1>Not Found</h1>
 }
