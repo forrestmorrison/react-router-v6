@@ -6,7 +6,6 @@ import './styles.css';
 
 function App() {
   const location = useLocation()
-  console.log(location)
   return (
     <>
       <nav>
